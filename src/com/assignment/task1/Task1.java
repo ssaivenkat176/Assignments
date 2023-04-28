@@ -5,9 +5,12 @@ public class Task1 {
 
     public static void main(String args[]) {
 
-        String myName = "Sai Venkat";
+
+        // Problem 1
+        String myName = "Venkat";
         System.out.println("My name is " + myName);
 
+        // Problem 2
         String userName;
 
         System.out.println("Please enter your name ...");
@@ -16,6 +19,9 @@ public class Task1 {
 
         System.out.println("The name entered in the console is " + userName);
 
+        // Problem 3
+
+        // Swap numbers with temp variable
         int a = 5, b = 10;
         System.out.println("The value of a and b before swapping respectively are " + a + " and  " + b);
 
@@ -24,26 +30,13 @@ public class Task1 {
         b = temp;
         System.out.println("The value of a and b after swapping respectively are " + a + " and " + b);
 
+        // Swap numbers without temp variable
+
         a = a + b;
         b = a - b;
         a = a - b;
 
         System.out.println("The value of a and b after swapping again respectively are " + a + " and " + b);
-        StringBuffer sb = new StringBuffer("Sai");
-        System.out.print(sb.capacity());
-        sb.append("Subramani");
-        System.out.print(sb);
-
-
-        StringBuilder sb2 = new StringBuilder("Sai");
-        System.out.print(sb2.capacity());
-
-        sb2.append("Subramani2");
-        System.out.print(sb2);
-
-
-
-
     }
 
 
