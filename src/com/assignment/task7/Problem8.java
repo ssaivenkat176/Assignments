@@ -1,6 +1,6 @@
 package com.assignment.task7;
 
-public class Problem7 {
+public class Problem8 {
 
     public static void main(String args[]) {
         int arr[] = {212, 3, 4, 6,10,12 ,2000};

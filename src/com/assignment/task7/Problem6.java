@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Program6 {
+public class Problem6 {
 
     public static void main(String args[]) {
 
