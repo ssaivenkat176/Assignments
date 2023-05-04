@@ -7,21 +7,21 @@ public class Problem7 {
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a string.....");
-        String str = scanner.next().toLowerCase();
+        String str = scanner.next();
 
-        int count[] = new int[26];
+        boolean seen[] = new boolean[256];
         boolean isIsogram = true;
 
         for(char character : str.toCharArray()) {
-            if(count[character - 'a'] > 0)
+            if(seen[character])
                 isIsogram = false;
-            count[character - 'a']++;
+            seen[character] = true;
         }
 
         if(isIsogram)
-            System.out.println("The string " + str + "has unique elements and is a isogram ");
+            System.out.println("The string " + str + " has unique elements and is a isogram ");
         else
-            System.out.println("The string " + str + "doesn't have unique elements and is not a isogram ");
+            System.out.println("The string " + str + " doesn't have unique elements and is not a isogram ");
 
     }
 }
